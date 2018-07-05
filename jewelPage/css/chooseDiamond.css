@@ -1,0 +1,105 @@
+.personalTailorBudget_main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.personalTailorBudget_content{
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+}
+.personalTailor_title{
+    font-size: 3vmin;
+    text-align: center;
+    line-height: 300%;
+}
+.personalTailor_procedure{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+._step{
+    width: 17%;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 18px;
+    color: #333;
+}
+.selectJewel{
+    border: 1px solid #84d8d1;
+    color: #84d8d1;
+}
+.arrows_right{
+    width: 3.75%;
+    height: 36px;
+    float: left;
+    left: 36px;
+    text-align: center;
+}
+.arrows_right>img{
+    margin: 13.5px auto;
+}
+.fillout_present{
+    width: 25%;
+    height: auto;
+    margin: 3% auto;
+    background: #bbeeea;
+}
+.first_step{
+    width: 100%;
+    height: auto;
+    line-height: 500%;
+    background: #84d8d1;
+    text-align: center;
+}
+.chooseCiamond{
+    width: 96%;
+    height: auto;
+    margin: 2%;
+    padding: 0 0 3% 0;
+    text-align: center;
+    background: #f8fef8;
+}
+.totalPrice{
+    width: 100%;
+    height: auto;
+    padding: 3% 0;
+    text-align: center;
+}
+.jewelryImg{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.jewelryImg>img{
+    width: 100%;
+    height: auto;
+}
+.jewelryIntro{
+    width: 100%;
+    height: auto;
+}
+.jewelryIntro>p{
+    line-height: 24px;
+}
+.jewelryPlus{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.jewelryPlus>img{
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+

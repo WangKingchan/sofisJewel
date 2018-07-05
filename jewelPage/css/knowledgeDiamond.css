@@ -1,0 +1,68 @@
+.knowledgeDiamond_box{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.knowledgeDiamond_main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3% 0;
+    overflow: hidden;
+}
+._main_left{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+._main_right{
+    width: 75%;
+    height: auto;
+    padding-left: 3%;
+    float: left;
+}
+._main_right>p{
+    line-height: 250%;
+}
+._main_left>img{
+    width: 100%;
+    height: auto;
+}
+._title{
+    width: 20%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: .5% 0;
+}
+._main_right>p{
+    margin: 3% 0;
+    text-align: justify;
+}
+._color{
+    color: #84d8d1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

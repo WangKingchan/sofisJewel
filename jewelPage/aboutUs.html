@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--如果用ie打开强制使用IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--When the screen zoom zoom according to 1 to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--将下面的 <meta> 标签加入到页面中可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title>aboutUs</title>
+    <!-- Bootstrap/css -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/aboutUs.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./images/logo.png">
+    <link rel="bookmark" href="./images/logo.png">
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="">
+<div class="index_container">
+
+    <!-- header -->
+    <!--<div ng-include="'./shared/header.html'"></div>-->
+    <header>
+        <div class="boundary fixed"></div>
+        <!-- nav -->
+        <div class="nav_div">
+            <ul class="navs">
+                <li class="tops navs_left">索菲思珠宝</li>
+                <li class="tops navs_middle">
+                    <div class="middle_up">
+                        <img src="./images/logo.png" alt="logo">
+                        <span>SOFIS JEWEL</span>
+                    </div>
+                    <ul class="middle_down">
+                        <li class="middleDown_li _homePage cur">首 页</li>
+                        <li class="middleDown_li _jewel">钻 石</li>
+                        <li class="middleDown_li _acc">配 饰</li>
+                        <li class="middleDown_li _jewelry">珠 宝</li>
+                        <li class="middleDown_li _gems">彩 宝</li>
+                        <li class="middleDown_li _order lastLi">私人定制</li>
+                    </ul>
+                </li>
+                <li class="tops navs_right">
+                    <div class="right_up">
+                        <img src="./images/collect.png" alt="我的宝贝">
+                        <span>我的收藏</span>
+                    </div>
+                    <div class="right_down" onclick="window.location.href='login.html'">
+                        <span>登录</span>&nbsp;/&nbsp;<span>注册</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- aboutUs Content main -->
+    <div class="aboutUs_main">
+        <ul class="main_top">
+            <li class="top_li li_left">
+                <img src="./images/make.png" alt="jewelry">
+            </li>
+            <li class="top_li li_middle">
+                <p>
+                    比利时的安特卫普享有数百年历史的“安特卫普切工”，是完美成品切工钻石的代表; 是世界上最负盛名的“钻石之都”。世界上第一颗被切割好的钻石就是在1447年诞生于比利时安特卫普的。安特卫普也是全球最大的钻石交易地，世界上一半以上的成品钻石和80% 钻石毛坯都是在这里交易的。
+                </p>
+                <p>
+                    SOFIS JEWEL索菲思珠宝位于安特卫普的钻石交易所内，掌握一手货源， 资深钻石分级师为每一位客户认真挑选钻石
+                </p>
+            </li>
+        </ul>
+        <ul class="boundary_ul">
+            <li class="boundary_li"></li>
+            <li class="jewel_sort"><b>品牌故事</b></li>
+            <li class="boundary_li"></li>
+        </ul>
+        <ul class="main_down">
+            <li class="down_top">
+                <div class="rectangles blue_L">-</div>
+                <div class="rectangles title_R"><!--合适钻石由何丽丽于2013年创建。--></div>
+            </li>
+            <li class="down_li down_left">
+                <img src="./images/bossImg.png" alt="品牌照片">
+                <div class="img_name">
+                    <!--<b>索菲思珠宝创始人&nbsp;xxx</b>-->
+                </div>
+            </li>
+            <li class="down_li down_right">
+                <p>
+                    SOFIS JEWEL 索菲思珠宝创始人任洁，出生于四川成都， 一个美丽而时尚的城市。 2001年赴欧留学并获得硕士学位。 毕业后一直在钻石行业里工作，并对钻石这种闪闪发光的特殊的石头一直有着浓厚的兴趣。
+                </p>
+                <p>
+                    2016年，她考取了IGI的珠宝鉴定师的资格证书并积极的投身于为客户寻找完美钻石的开拓路上。
+                </p>
+            </li>
+            <li class="_bottom_wire">+</li>
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <div ng-include="'./shared/footer.html'"></div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="./bootstrap/js/jquery-1.11.3.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/angular.js" type="text/javascript"></script>
+<script src="./js/shared.js" type="text/javascript"></script>
+</body>
+</html>

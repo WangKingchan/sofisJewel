@@ -1,0 +1,125 @@
+.myPrecious_main{
+    width: 80%;
+    height: auto;
+    margin: 3% auto;
+    border-bottom: 6px solid #84d8d1;
+}
+.page_title{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.myPrecious_total{
+    width: 100%;
+    height: auto;
+    line-height: 400%;
+    text-align: right;
+    padding: 0 1%;
+    box-sizing: border-box;
+    background: #84d8d1;
+}
+.myPrecious_contrast{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.border_bottom{
+    border-bottom: 1px solid #84d8d1;
+}
+.liFloat{
+    float: left;
+    text-align: center;
+    padding: 3% 0;
+}
+.contrast_left{
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+}
+.myPreciousImg{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+.myPreciousImg>img{
+    width: 60%;
+    height: auto;
+}
+.myPreciousReferral{
+    width: 70%;
+    height: auto;
+    float: left;
+    text-align: left;
+}
+.contrast_middle{
+    width: 50%;
+    height: auto;
+    padding-top: 3%;
+    text-align: left;
+}
+.contrast_right{
+    width: 10%;
+    height: auto;
+}
+.buttons{
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    background: #fff;
+    margin-top: 5%;
+    outline: none;
+}
+.blue{
+    border: 1px solid #84d8d1;
+    color: #84d8d1;
+}
+.black{
+    border: 1px solid #333;
+    color: #333;
+}
+.ContinueBuy{
+    width: 100%;
+    height: auto;
+    margin-bottom: 3%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.buyJewel{
+    width: 10%;
+    height: 250%;
+    line-height: 250%;
+    background: #333;
+    color: #fff;
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    border: none;
+}
+.buyGems{
+    width: 10%;
+    height: 250%;
+    line-height: 250%;
+    background: #84d8d1;
+    color: #333;
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    border: none;
+    margin-left: 3%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

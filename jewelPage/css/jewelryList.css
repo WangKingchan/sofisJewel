@@ -1,0 +1,36 @@
+/* Accessories Content main */
+
+.jewelry_main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+.td_li{
+    width: 25%;
+    height: auto;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+}
+.td_li>img{
+    width: 100%;
+    height: auto;
+}
+.name_cost{
+    width: 100%;
+    height: auto;
+    background: #f1f1f2;
+    text-align: center;
+}
+.name_cost>p{
+    line-height: 250%;
+}
+.link_details{
+    width: 100%;
+    height: auto;
+    background: #84d8d1;
+    line-height: 300%;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--如果用ie打开强制使用IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--When the screen zoom zoom according to 1 to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--将下面的 <meta> 标签加入到页面中可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title>connectUs</title>
+    <!-- Bootstrap/css -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/connectUs.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="bookmark" href="./images/logo.png">
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="">
+<div class="index_container">
+
+    <!-- header -->
+    <!--<div ng-include="'./shared/header.html'"></div>-->
+    <header>
+        <div class="boundary fixed"></div>
+        <!-- nav -->
+        <div class="nav_div">
+            <ul class="navs">
+                <li class="tops navs_left">索菲思珠宝</li>
+                <li class="tops navs_middle">
+                    <div class="middle_up">
+                        <img src="./images/logo.png" alt="logo">
+                        <span>SOFIS JEWEL</span>
+                    </div>
+                    <ul class="middle_down">
+                        <li class="middleDown_li _homePage cur">首 页</li>
+                        <li class="middleDown_li _jewel">钻 石</li>
+                        <li class="middleDown_li _acc">配 饰</li>
+                        <li class="middleDown_li _jewelry">珠 宝</li>
+                        <li class="middleDown_li _gems">彩 宝</li>
+                        <li class="middleDown_li _order lastLi">私人定制</li>
+                    </ul>
+                </li>
+                <li class="tops navs_right">
+                    <div class="right_up">
+                        <img src="./images/collect.png" alt="我的宝贝">
+                        <span>我的收藏</span>
+                    </div>
+                    <div class="right_down" onclick="window.location.href='login.html'">
+                        <span>登录</span>&nbsp;/&nbsp;<span>注册</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- connectUs Content main -->
+    <div class="connectUs_main">
+        <ul class="boundary_ul">
+            <li class="boundary_li"></li>
+            <li class="jewel_sort"><h3>联&nbsp;系&nbsp;我&nbsp;们</h3></li>
+            <li class="boundary_li"></li>
+        </ul>
+        <ul class="connectUs_content">
+            <li class="_content_left">
+                <h3>比利时安特卫普总部</h3>
+                <p>地址：Pelikaanstraat 62, Diamond Club, 2018 Antwerp, Belgium  </p>
+                <p>邮箱：info@sofisjewel.com</p>
+                <p>电话：<span class="_phoneNum">0032 484 616 543</span></p>
+                <div class="warmPrompt">
+                    <b>温馨提示</b>
+                    <p>
+                        公司位于安特卫普钻交所大楼内， 请每位来访的客人务必携带本人的护照或欧盟国身份证，以供钻交所安检之用， 并请您在来访前提前与我们电话或微信预约。
+                    </p>
+                </div>
+            </li>
+            <li class="_content_right">
+                <h3>南非分部</h3>
+                <p>地址：8 Harmsworth Place, Parklands North, Table view, <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cape Town. 7441， South Africa</p>
+                <p>电话：<span class="_phoneNum">0027 609 953 117</span></p>
+                <div class="QR_code">
+                    <img class="QR_codeImg" src="./images/QR_code.png" alt="二维码">
+                    <div class="prompt">
+                        <span>
+                            如果您自己开车来， 为了您的方便， 请将您的车停在以下停车场：Diamant (Antwerpen) PARKING Appelmansstraat 25, 2018 Antwerpen， BELGIUM
+                        </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- footer -->
+    <div ng-include="'./shared/footer.html'"></div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="./bootstrap/js/jquery-1.11.3.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/angular.js" type="text/javascript"></script>
+<script src="./js/shared.js" type="text/javascript"></script>
+</body>
+</html>

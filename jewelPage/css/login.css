@@ -1,0 +1,207 @@
+/* login Content main */
+.login_main{
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 7% auto;
+    overflow: hidden;
+}
+.main_li{
+    width: 33.33%;
+    height: auto;
+    float: left;
+}
+.logins{
+    width: 100%;
+    height: auto;
+}
+.login>input{
+    width: 90%;
+    height: 36px;
+    margin: 3% 0;
+    line-height: 36px;
+    padding: 0 2%;
+    outline: none;
+    box-sizing: border-box;
+}
+._userLogin{
+    width: 90%;
+    height: 36px;
+    margin-top: 20%;
+    line-height: 36px;
+    outline: none;
+    box-sizing: border-box;
+    background: #84d8d1;
+    border: 0;
+    border: none;
+}
+.register_Error,.forget_Error,.login_Error{
+    height: 20px;
+    margin: 2% 0;
+    /*color: #f00;*/
+}
+.small>span{
+    color: #84d8d1;
+    cursor: pointer;
+}
+._logins,._reg{
+    color: #84d8d1;
+}
+.forgetPassword{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.register{
+    width: 100%;
+    height: auto;
+    display: none;
+}
+.for_input{
+    height: 36px;
+    margin: 3% 0;
+    line-height: 36px;
+    padding: 0 2%;
+    outline: none;
+    box-sizing: border-box;
+}
+.reg_input{
+    height: 36px;
+    margin: 3% 0;
+    line-height: 36px;
+    padding: 0 2%;
+    outline: none;
+    box-sizing: border-box;
+}
+.mailBox{
+    width: 90%;
+
+}
+._mailBox{
+    width: 100%;
+
+}
+._verificationCode{
+    width: 60%;
+}
+.verificationCode{
+    width: 50%;
+
+}
+.gainVerification{
+    width: 38%;
+    height: 36px;
+    margin-left: 2%;
+    outline: none;
+    border: none;
+    border: 0;
+    background: #84d8d1;
+
+}
+._gainVerification{
+    width: 38%;
+    height: 36px;
+    margin-left: 2%;
+    outline: none;
+    border: none;
+    border: 0;
+    background: #84d8d1;
+
+}
+.newPassword,.confirmPassword{
+    width: 90%;
+}
+._newPassword,._confirmPassword{
+    width: 100%;
+}
+._return{
+    color: #84d8d1;
+    cursor: pointer;
+}
+.finish{
+    width: 90%;
+    height: 36px;
+    outline: none;
+    border: none;
+    border: 0;
+    background: #84d8d1;
+    margin-top: 1%;
+}
+
+.btn_register{
+    width: 100%;
+    height: 36px;
+    outline: none;
+    border: none;
+    border: 0;
+    background: #84d8d1;
+    margin-top: 1%;
+}
+.WeChat{
+    text-align: center;
+}
+.WeChat>div:nth-of-type(1){
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+}
+.QR_code_login{
+    width: 45%;
+    height: auto;
+    margin: 1% auto;
+    border: 6px solid #84d8d1;
+}
+.QR_code_login>img{
+    width: 100%;
+    height: auto;
+}
+.timeLimit{
+    width: 40%;
+    height: auto;
+    margin: 5% auto 0;
+    padding: 0.5% 0;
+    border-radius: 15px;
+    border: 1px solid #84d8d1;
+    color: #84d8d1;
+}
+.createAccount{
+    padding-left: 3%;
+}
+.registerHint>p{
+    line-height: 300%;
+}
+.btn_createAccount{
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    background: #84d8d1;
+    border: 0;
+    border: none;
+    margin-top: 27%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

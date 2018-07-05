@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--如果用ie打开强制使用IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--When the screen zoom zoom according to 1 to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--将下面的 <meta> 标签加入到页面中可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title>login</title>
+    <!-- Bootstrap/css -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="bookmark" href="./images/logo.png">
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="">
+<div class="index_container">
+
+    <!-- header -->
+    <!--<div ng-include="'./shared/header.html'"></div>-->
+    <header>
+        <div class="boundary fixed"></div>
+        <!-- nav -->
+        <div class="nav_div">
+            <ul class="navs">
+                <li class="tops navs_left">索菲思珠宝</li>
+                <li class="tops navs_middle">
+                    <div class="middle_up">
+                        <img src="./images/logo.png" alt="logo">
+                        <span>SOFIS JEWEL</span>
+                    </div>
+                    <ul class="middle_down">
+                        <li class="middleDown_li _homePage cur">首 页</li>
+                        <li class="middleDown_li _jewel">钻 石</li>
+                        <li class="middleDown_li _acc">配 饰</li>
+                        <li class="middleDown_li _jewelry">珠 宝</li>
+                        <li class="middleDown_li _gems">彩 宝</li>
+                        <li class="middleDown_li _order lastLi">私人定制</li>
+                    </ul>
+                </li>
+                <li class="tops navs_right">
+                    <div class="right_up">
+                        <img src="./images/collect.png" alt="我的宝贝">
+                        <span>我的收藏</span>
+                    </div>
+                    <div class="right_down" onclick="window.location.href='login.html'">
+                        <span class="_logins">登录</span>&nbsp;/&nbsp;<span class="_reg">注册</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- login Content main -->
+    <ul class="login_main">
+        <li class="main_li mailbox">
+            <div class="logins">
+                <form class="login" action="123.html">
+                    <h3>邮箱/手机登录</h3>
+                    <input id="userName" type="text" placeholder="请输入电子邮箱"><br>
+                    <input id="password" type="password" placeholder="请输入6~18位密码"><br>
+                    <p class="login_Error">* 请按照输入框内的提示输入合法的用户名和密码！</p>
+                    <small class="small">忘记密码了？<span class="retrievePassword">点击找回</span></small><br>
+                    <button class="_userLogin">登录</button>
+                </form>
+            </div>
+            <div class="forgetPassword">
+                <form id="resetPassword" action="321.com">
+                    <p><input id="r_userName" class="for_input mailBox" type="text" placeholder="请输入电子邮箱"></p>
+                    <p><input class="for_input verificationCode" type="text" placeholder="6位验证密码"><button class="gainVerification">获取验证码</button></p>
+                    <p><input id="r_paswd" class="for_input newPassword" type="password" placeholder="请重新设置6~20位数字、字母组合密码"></p>
+                    <p><input id="confirmPassword" class="for_input confirmPassword" type="password" placeholder="请再次输入密码"></p>
+                    <p><small class="_return">&lt;<&nbsp返回</small></p>
+                    <p class="forget_Error">* 请按照输入框内的提示输入合法的用户名和密码！</p>
+                    <button class="finish">完成</button>
+                </form>
+            </div>
+        </li>
+        <li class="main_li WeChat">
+            <h3>微信登录</h3>
+            <div>
+                <img src="./images/WeChat.png" alt="微信图标">
+                <small>请用微信注册，登录</small><br>
+                <small>请用微信扫描二维码</small>
+            </div>
+            <div class="QR_code_login">
+                <img src="./images/QR_code.png" alt="二维码">
+            </div>
+            <div class="timeLimit">两分钟之内有效</div>
+        </li>
+        <li class="main_li createAccount">
+            <div class="registerHint">
+                <h3>注册账户</h3>
+                <p>成为会员的好处：</p>
+                <p>
+                    更容易查看订购记录，保存商品和其他信息<br>
+                    更具保存的运送和账单信息更快结账<br>
+                    专享优惠、折扣和送货升级...
+                </p>
+                <button class="btn_createAccount">创建账户</button>
+            </div>
+            <div class="register">
+                <form id="_register" action="123456.html">
+                    <p><input id="_mailBox" class="reg_input _mailBox" type="text" placeholder="请输入电子邮箱"></p>
+                    <p><input class="reg_input _verificationCode" type="text" placeholder="6位验证密码"><button class="_gainVerification">获取验证码</button></p>
+                    <p><input id="_newPassword" class="reg_input _newPassword" type="password" placeholder="请设置6~20位数字、字母组合密码"></p>
+                    <p><input id="_confirmPassword" class="reg_input _confirmPassword" type="password" placeholder="请再次输入密码"></p>
+                    <p class="register_Error">* 请按照输入框内的提示输入合法的用户名和密码！</p>
+                    <button class="btn_register">创建账户</button>
+                </form>
+            </div>
+        </li>
+    </ul>
+
+    <!-- footer -->
+    <div ng-include="'./shared/footer.html'"></div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="./bootstrap/js/jquery-1.11.3.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/angular.js" type="text/javascript"></script>
+<script src="./js/shared.js" type="text/javascript"></script>
+<script>
+    $(function () {
+        $(".retrievePassword").click(function () {
+            $(".logins").hide();
+            $(".forgetPassword").show();
+        });
+
+        $("._return").click(function () {
+            $(".logins").show();
+            $(".forgetPassword").hide();
+        });
+
+        $(".btn_createAccount").click(function () {
+            $(".registerHint").hide();
+            $(".register").show();
+        });
+
+//登录正则判断！
+        $("._userLogin").click(function () {
+//            var reg = /^[1][34578][0-9]{9}$/;
+            var emial = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+            var val = $("#userName").val();
+            var pass = /^[a-zA-Z0-9]{6,18}$/;//6~18位密码
+            var passval = $("#password").val();
+
+            if(/*(reg.test(val) || */emial.test(val)/*)*/ && pass.test(passval)){
+                $(".login_Error").html("*输入正确！").css("color","#84d8d1");
+                return true;
+            } else {
+                $(".login_Error").html("* 您输入的用户名和密码不匹配，请重新输入！").css("color","#f00");
+                return false;
+            };
+        });
+
+//找回密码正则判断！
+        $(".finish").click(function () {
+//            var reg = /^[1][34578][0-9]{9}$/;
+            var emial = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+            var val = $("#r_userName").val();
+            var pass = /^[a-zA-Z0-9]{6,18}$/;//6~18位密码
+            var passval = $("#r_paswd").val();
+            var confirmPassword = $("#confirmPassword").val();
+
+            if(/*((reg.test(val) || */(emial.test(val)/*)*/ && pass.test(passval)) && confirmPassword == passval){
+                $(".forget_Error").html("*输入正确！").css("color","#84d8d1");
+                return true;
+            } else {
+                $(".forget_Error").html("* 您输入的用户名和密码不匹配，请重新输入！").css("color","#f00");
+                return false;
+            };
+        });
+
+
+//找注册正则判断！
+        $(".btn_register").click(function () {
+//            var reg = /^[1][34578][0-9]{9}$/;
+            var emial = /^([0-9A-Za-z\-_\.]+)@([0-9a-z]+\.[a-z]{2,3}(\.[a-z]{2})?)$/g;
+            var val = $("#_mailBox").val();
+            var pass = /^[a-zA-Z0-9]{6,18}$/;//6~18位密码
+            var passval = $("#_newPassword").val();
+            var confirmPassword = $("#_confirmPassword").val();
+
+            if(/*((reg.test(val) || */(emial.test(val)/*)*/ && pass.test(passval)) && confirmPassword == passval){
+                $(".register_Error").html("*输入正确！").css("color","#84d8d1");
+                return true;
+            } else {
+                $(".register_Error").html("* 您输入的用户名和密码不匹配，请重新输入！").css("color","#f00");
+                return false;
+            };
+        });
+    });
+
+</script>
+</body>
+</html>

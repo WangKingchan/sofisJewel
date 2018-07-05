@@ -1,0 +1,133 @@
+/* comparison Content main */
+.comparison_main{
+    width: 80%;
+    height: auto;
+    box-sizing: border-box;
+    background: #fff;
+    margin: 3% auto;
+}
+.comparison_goods{
+    width: 100%;
+    height: auto;
+    border-top: 1px solid #84d8d1;
+    margin-bottom: 4%;
+}
+.panel-title{
+    width: 100%;
+    height: auto;
+    line-height: 32px;
+    overflow: hidden;
+    padding: 1%;
+    box-sizing: border-box;
+}
+.title_div{
+    width: 9.09%;
+    height: auto;
+    line-height: inherit;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+.iconImg{
+    width: 6%;
+    float: left;
+    text-align: center;
+    border-right: 1px solid #ddd;
+}
+.symmetry{
+    width: 9.09%;
+    text-align: center;
+    float: left;
+}
+.lookCost{
+    width: 12.09%;
+    border: 1px solid #ddd;
+    text-align: center;
+    border-radius: 16px;
+    float: left;
+}
+.panel-body{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: #84d8d1;
+}
+.Show_hidden{
+    float: left;
+}
+.goodsImg{
+    width: 16%;
+    height: auto;
+    margin-left: 3%;
+}
+.goodsImg>img{
+    width: 100%;
+    height: auto;
+}
+.intro{
+    width: 25%;
+    height: 200%;
+    margin-left: 3%;
+    border-right: 1px solid #fff;
+}
+.explain{
+    width: 49.81%;
+    height: auto;
+    margin-left: 3%;
+}
+.pack_up{
+    width: 9.19%;
+    height: inherit;
+    position: relative;
+    overflow: hidden;
+}
+.hidden_information{
+    width: 70%;
+    height: 32px;
+    line-height: 32px;
+    margin: 140% auto 0;
+    border-radius: 16px;
+    background: #fff;
+    text-align: center;
+}
+.View_certificate{
+    width: 35%;
+    height: auto;
+    padding: 1%;
+    background: #fff;
+    text-align: center;
+    margin: 15% 0 20%;
+    border-radius: 6px;
+    border: 0;
+    border: none;
+    outline: none;
+}
+.collect_reserve{
+    margin-top: 7%;
+    overflow: hidden;
+}
+.collect{
+    width: 10%;
+    float: left;
+    padding: 0.5%;
+    background: #fff;
+    text-align: center;
+    border-radius: 6px;
+    border: 0;
+    border: none;
+    outline: none;
+}
+.reserve{
+    width: 24%;
+    float: left;
+    padding: 0.5%;
+    margin-left: 1%;
+    background: #000;
+    text-align: center;
+    color: #fff;
+    border-radius: 6px;
+    border: 0;
+    border: none;
+    outline: none;
+}

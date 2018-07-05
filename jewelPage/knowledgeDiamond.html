@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--如果用ie打开强制使用IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--When the screen zoom zoom according to 1 to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--将下面的 <meta> 标签加入到页面中可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title>knowledgeDiamond</title>
+    <!-- Bootstrap/css -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/knowledgeDiamond.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="bookmark" href="./images/logo.png">
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body ng-app="">
+<div class="knowledgeDiamond_box">
+
+    <!-- header -->
+    <div ng-include="'./shared/header.html'"></div>
+
+    <div class="knowledgeDiamond_main">
+        <div class="_main_left">
+            <img src="./images/favorites2.png" alt="钻石">
+        </div>
+        <div class="_main_right">
+            <div class="_title">钻石知识：4C</div>
+            <p>
+                <span class="_color">克拉（Carat）</span> <br>
+                钻石重量以克拉（又称卡）计算。 <br>
+                1克拉=200毫克=0.2克。一克拉分为一百份，每一份称为一分。0.75克拉(3/4克拉)又称为75分，0.01克拉为1分。因为钻石的密度基本上相同，因此越重的钻石体积越大。越大的钻石越稀有，每克拉的价值亦越高。
+            </p>
+            <p>
+                <span class="_color">净度（Clarity）</span> <br>
+                它以钻石内的内含物多少决定。内含物可能是天然的杂质或裂痕。内含物的数量、位置、大小等都会影响评级。钻石矿开采出来的金刚石中，只有20%可以成为宝石，其馀的因为内含物较多通常只能作工业用途。而20%~40%的宝石级钻石中，大部分都包含肉眼可见的内含物。钻石分级师通常会使用10倍放大镜观察钻石内部及表面内含物的大小、数量、分布及对钻石光彩影响的程度，分出等级。一般通行的净度分级如下：<br>
+                FL - “Flawless”，完美无瑕。在十倍放大镜下内外俱无内含物。<br>
+                IF - “Internally Flawless”，内部无瑕。在十倍放大镜下只有表面有轻微花痕。<br>
+                VVS1, VVS2 - “Very Very Slight”，非常非常小。在十倍放大镜下只有很难看见的内含物。VVS1净度高于VVS2。<br>
+                VS1 and VS2 - “Very Slight”，非常小。在十倍放大镜下可见内含物，但肉眼难以辨认。VS1净度高于VS2。<br>
+                SI1 and SI2 - “Slight Inclusions”，小型内含物，肉眼可能看见。<br>
+                I1, I2 and I3 - “Imperfect”，清楚的内含物，可以被肉眼看见。
+            </p>
+            <p>
+                <span class="_color">颜色（Color）</span><br>
+                钻石的颜色会因为化学上的杂质而有所偏差。完全纯正的钻石应该是透明无色的。钻石偏向不同的颜色会影响它的价值。无色钻里以D级最高，Z最低。<br>
+                无色：D, E, F<br>
+                接近无色：G, H, I, J<br>
+                微黄：K, L, M<br>
+                轻浅黄：N, O, P, Q, R<br>
+                浅黄：S, T, U, V, W, X, Y, Z<br>
+            </p>
+            <p>
+                <span class="_color">切工（Cut）</span><br>
+                钻石切工主要是包括钻石切割、抛光和对称这三个方面。好的切工应尽可能的体现钻石的亮度和火彩，并且尽量保持原石重量。国际上钻石的切工等级从高到低分为EX（完美)、VG（非常好）G（好）、F (一般）、 P (差）。
+            </p>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div ng-include="'./shared/footer.html'"></div>
+
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="./bootstrap/js/jquery-1.11.3.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/angular.js" type="text/javascript"></script>
+<script src="./js/shared.js" type="text/javascript"></script>
+</body>
+</html>

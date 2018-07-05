@@ -1,0 +1,134 @@
+/*begin*/
+._homePage{
+    color: #84d8d1;
+}
+.textTitle{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 3% 0;
+    text-align: center;
+}
+.textTitle>p:nth-child(2){
+    font-size: 2vmin;
+}
+.index_main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto 5%;
+    overflow: hidden;
+}
+.main_up{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+.up_left{
+    width: 39.1%;
+    float: left;
+}
+.up_left,.up_right,.earrings,.bracelet,.down_right{
+    position: relative;
+}
+.up_left>img,.up_right>img{
+    width: 100%;
+    height: auto;
+}
+.text_hint{
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+.text_hint>b{
+    font-size: 3vmin;
+}
+.up_right{
+    width: 59.9%;
+    float: left;
+    margin-left: 1%;
+}
+.up1{
+    margin: 0 auto;
+    position: absolute;
+    top: 18%;
+    left: 42%;
+}
+.up2{
+    color: #fff;
+    margin: 0 auto;
+    position: absolute;
+    top: 28%;
+    left: 20%;
+}
+.up3,.up4{
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 36%;
+}
+.up5{
+    margin: 0 auto;
+    position: absolute;
+    bottom: 35%;
+    left: 20%;
+}
+.main_down{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.down_left{
+    width: 59.8%;
+    float: left;
+    overflow: hidden;
+}
+.referral{
+    width: 100%;
+    height: auto;
+    background: #84d8d1;
+    text-align: center;
+    padding: 10% 0;
+    margin-bottom: 2%;
+}
+.earrings{
+    width: 49%;
+    height: auto;
+    float: left;
+}
+.earrings>img,.bracelet>img{
+    width: 100%;
+    height: auto;
+}
+.bracelet{
+    width: 49%;
+    height: auto;
+    float: left;
+    margin-left: 2%;
+}
+.down_right{
+    width: 39.2%;
+    float: left;
+    margin-left: 1%;
+}
+.down_right>img{
+    width: 100%;
+    height: auto;
+}
+.necklaceText{
+    width: 100%;
+    height: auto;
+    padding: 10% 0;
+    background: #84d8d1;
+}
+.necklaceText>div{
+    width: 60%;
+    height: auto;
+    line-height: 300%;
+    border: 1px solid #333;
+    margin: 0 auto;
+    text-align: center;
+}
+.up_left:hover,.up_right:hover,.earrings:hover,.bracelet:hover,.down_right:hover{
+    cursor: pointer;
+}

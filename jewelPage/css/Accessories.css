@@ -1,0 +1,70 @@
+/* Accessories Content main */
+._acc{
+    color: #84d8d1;
+}
+.Accessories_content,.main_banner1{
+    width: 100%;
+    height: auto;
+    margin: 0 0 3% 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main_banner1{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.main_banner1>img{
+    width: 100%;
+    height: auto;
+}
+.main_down{
+    width: 100%;
+    height: auto;
+    background: #84d8d1;
+    padding: 2% 0;
+}
+.main_list{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.list_li{
+    width: 25%;
+    height: auto;
+    float: left;
+}
+.li_div{
+    width: 50%;
+    height: auto;
+    line-height: 200%;
+    border-radius: 20px;
+    background: #fff;
+    color: #84d8d1;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2vmin;
+}
+.li_div:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

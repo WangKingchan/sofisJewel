@@ -1,0 +1,67 @@
+.smallInBig_main{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+._mian{
+    width: 60%;
+    height: auto;
+    margin: 3% auto;
+}
+._mian>div:nth-of-type(1){
+    width: 55%;
+    height: auto;
+    margin: 2% auto;
+    text-align: center;
+}
+._mian>ul{
+    width: 55%;
+    height: auto;
+    margin: 60px auto 3%;
+    text-align: center;
+    overflow: hidden;
+}
+._mian>ul>li{
+    width:30%;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    border: 1px solid #555;
+    border-radius: 18px;
+    margin: 0 1.5%;
+}
+.carousel{
+    width: 55%;
+    height: auto;
+    margin: 0 auto;
+    border: 25px solid #84d8d1;
+}
+.item>img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -70px;
+    left: 50%;
+}
+.carousel-indicators li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #ddd;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #84d8d1;
+}

@@ -1,0 +1,19 @@
+.smallInBig_main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+._mian{
+    width: 80%;
+    height: auto;
+    margin: 10% auto 18%;
+}
+._title{
+    width: 10%;
+    text-align: center;
+    line-height: 200%;
+    background: #333;
+    color: #fff;
+    margin-bottom: 8%;
+}
+

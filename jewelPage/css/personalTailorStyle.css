@@ -1,0 +1,127 @@
+.personalTailorBudget_main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.personalTailorBudget_content{
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+}
+.personalTailor_title{
+    font-size: 3vmin;
+    text-align: center;
+    line-height: 300%;
+}
+.personalTailor_procedure{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+._step{
+    width: 17%;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 18px;
+    color: #333;
+}
+.style{
+    border: 1px solid #84d8d1;
+    color: #84d8d1;
+}
+.arrows_right{
+    width: 3.75%;
+    height: 36px;
+    float: left;
+    left: 36px;
+    text-align: center;
+}
+.arrows_right>img{
+    margin: 13.5px auto;
+}
+.fillout_present{
+    width: 100%;
+    height: auto;
+    margin: 3% auto;
+}
+.first_step{
+    width: 100%;
+    height: auto;
+    line-height: 500%;
+    background: #84d8d1;
+    text-align: center;
+}
+.types{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #fff;
+    padding: 2% 0;
+}
+._type{
+    width: 18.4%;
+    height: auto;
+    float: left;
+    background: #fff;
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+._type>img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.latter{
+    margin-left: 2%;
+}
+.reserve{
+    color: #f78279;
+}
+.jewelry_abstract{
+    width: 100%;
+    height: auto;
+    background: #f1f1f2;
+    padding: 5% 0;
+}
+.jewelry_cost{
+    margin: 5% auto;
+}
+.link_button{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.link_abstract{
+    width: 50%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    border: none;
+    background: #aae8e3;
+    color: #333;
+    outline: none;
+    float: left;
+}
+.link_abstract:hover,.link_select:hover{
+    cursor: pointer;
+}
+.link_select{
+    width: 50%;
+    height: 36px;
+    line-height: 36px;
+    border: 0;
+    border: none;
+    background: #84d8d1;
+    color: #333;
+    outline: none;
+    float: left;
+}

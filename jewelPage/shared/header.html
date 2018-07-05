@@ -1,0 +1,66 @@
+<header>
+    <div class="boundary fixed"></div>
+    <!-- nav -->
+    <div class="nav_div">
+        <ul class="navs">
+            <li class="tops navs_left">索菲思珠宝</li>
+            <li class="tops navs_middle">
+                <div class="middle_up">
+                    <img src="./images/logo.png" alt="logo">
+                    <span>SOFIS JEWEL</span>
+                </div>
+                <ul class="middle_down">
+                    <li class="middleDown_li _homePage cur">首 页</li>
+                    <li class="middleDown_li _jewel">钻 石</li>
+                    <li class="middleDown_li _acc">配 饰</li>
+                    <li class="middleDown_li _jewelry">珠 宝</li>
+                    <li class="middleDown_li _gems">彩 宝</li>
+                    <li class="middleDown_li _order lastLi">私人定制</li>
+                    <!--<li class="middleDown_li cur" onclick="window.location.href='index.html'">首 页</li>-->
+                    <!--<li class="middleDown_li" onclick="window.location.href='jewel.html'">钻 石</li>-->
+                    <!--<li class="middleDown_li" onclick="window.location.href='Accessories.html'">配 饰</li>-->
+                    <!--<li class="middleDown_li" onclick="window.location.href='jewelryList.html'">珠 宝</li>-->
+                    <!--<li class="middleDown_li" onclick="window.location.href='jewelryList.html'">彩 宝</li>-->
+                    <!--<li class="middleDown_li lastLi" onclick="window.location.href='personalTailor.html'">私人定制</li>-->
+                </ul>
+            </li>
+            <li class="tops navs_right">
+                <div class="right_up">
+                    <img src="./images/collect.png" alt="我的宝贝">
+                    <span>我的收藏</span>
+                </div>
+                <div class="right_down" onclick="window.location.href='login.html'">
+                    <span>登录</span>&nbsp;/&nbsp;<span>注册</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
+<!--<script src="../bootstrap/js/jquery-1.11.3.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function(){
+//        $(".middle_down>.middleDown_li").eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+        $(".middle_down>.middleDown_li").click(function(){
+            if ($(this).is("._homePage")) {
+                window.location.href = "./index.html";
+                $(this).css("color","#84d8d1")
+            }else if ($(this).is("._jewel")) {
+                window.location.href = "./jewel.html";
+                $(this).css("color","#84d8d1")
+            }else if ($(this).is("._acc")) {
+                window.location.href = "./Accessories.html";
+                $(this).css("color","#84d8d1")
+            }else if ($(this).is("._jewelry")) {
+                window.location.href = "./jewelryList.html";
+                $(this).css("color","#84d8d1")
+            }else if ($(this).is("._gems")) {
+                window.location.href = "./jewelryList.html";
+                $(this).css("color","#84d8d1")
+            }else if ($(this).is("._order")) {
+                window.location.href = "./personalTailor.html";
+                $(this).css("color","#84d8d1")
+            }
+        });
+//        $(this).eq($(this).index()).addClass("cur").siblings().removeClass('cur');
+    });
+</script>

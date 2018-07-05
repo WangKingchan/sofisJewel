@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <!--如果用ie打开强制使用IE的兼容模式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--When the screen zoom zoom according to 1 to 1-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!--将下面的 <meta> 标签加入到页面中可以让部分国产浏览器默认采用高速模式渲染页面-->
+    <meta name="renderer" content="webkit">
+    <title>jewel</title>
+    <!-- Bootstrap/css -->
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/shared.css">
+    <link rel="stylesheet" href="./css/jewel.css">
+    <link rel="shortcut icon" href="./images/logo.png">
+    <!--<link rel="bookmark" href="./images/logo.png">-->
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-app="">
+<div class="page_container">
+
+    <!--header-->
+    <!--<div ng-include="'./shared/header.html'"></div>-->
+    <header>
+        <div class="boundary fixed"></div>
+        <!-- nav -->
+        <div class="nav_div">
+            <ul class="navs">
+                <li class="tops navs_left">索菲思珠宝</li>
+                <li class="tops navs_middle">
+                    <div class="middle_up">
+                        <img src="./images/logo.png" alt="logo">
+                        <span>SOFIS JEWEL</span>
+                    </div>
+                    <ul class="middle_down">
+                        <li class="middleDown_li _homePage cur">首 页</li>
+                        <li class="middleDown_li _jewel">钻 石</li>
+                        <li class="middleDown_li _acc">配 饰</li>
+                        <li class="middleDown_li _jewelry">珠 宝</li>
+                        <li class="middleDown_li _gems">彩 宝</li>
+                        <li class="middleDown_li _order lastLi">私人定制</li>
+                    </ul>
+                </li>
+                <li class="tops navs_right">
+                    <div class="right_up">
+                        <img src="./images/collect.png" alt="我的宝贝">
+                        <span>我的收藏</span>
+                    </div>
+                    <div class="right_down" onclick="window.location.href='login.html'">
+                        <span>登录</span>&nbsp;/&nbsp;<span>注册</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!--mian-->
+    <div class="jewel_content">
+        <div class="top_div">
+            <ul class="top_ul_left">
+                <li class="ul_li">
+                    <div class="name">重量</div>
+                    <div class="weight border"><input type="text" placeholder="0.2"></div>
+                    <div class="weight">——</div>
+                    <div class="weight redact">
+                        <input class="_weight" type="text" placeholder="20">
+                        <div class="_addSubtract">
+                            <div><img class="_plus" src="./images/up1.png" alt=""></div>
+                            <div><img class="_minus" src="./images/down1.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="weight">ct</div>
+                    <div class="weight renovation"><input type="checkbox">刷新</div>
+                </li>
+                <li class="ul_li">
+                    <div class="name">形状</div>
+                    <ul class="shapes">
+                        <li class="shape _click"><img src="./images/jewel1.png" alt="钻石形状" title="圆形"></li>
+                        <li class="shape"><img src="./images/jewel2.png" alt="钻石形状" title="梨形"></li>
+                        <li class="shape"><img src="./images/jewel3.png" alt="钻石形状" title="公主方"></li>
+                        <li class="shape"><img src="./images/jewel4.png" alt="钻石形状" title="心形"></li>
+                        <li class="shape"><img src="./images/jewel5.png" alt="钻石形状" title="橄榄形"></li>
+                        <li class="shape"><img src="./images/jewel6.png" alt="钻石形状" title="椭圆形"></li>
+                        <li class="shape"><img src="./images/jewel7.png" alt="钻石形状" title="祖母绿"></li>
+                        <li class="shape"><img src="./images/jewel8.png" alt="钻石形状" title="地雷恩"></li>
+                        <li class="shape"><img src="./images/jewel9.png" alt="钻石形状" title="火焰玫瑰"></li>
+                        <li class="shape"><img src="./images/jewel10.png" alt="钻石形状" title="三角形"></li>
+                        <li class="shape"><img src="./images/jewel11.png" alt="钻石形状" title="垫形"></li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">颜色</div>
+                    <ul class="shapes">
+                        <li class="jewel_color _clickColor">D</li>
+                        <li class="jewel_color">E</li>
+                        <li class="jewel_color">F</li>
+                        <li class="jewel_color">G</li>
+                        <li class="jewel_color">H</li>
+                        <li class="jewel_color">I</li>
+                        <li class="jewel_color">J</li>
+                        <li class="jewel_color">K</li>
+                        <li class="jewel_color">L</li>
+                        <li class="jewel_color">M</li>
+                        <li class="jewel_color">N-Z</li>
+                        <li class="jewel_color">彩钻</li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">净度</div>
+                    <ul class="shapes">
+                        <li class="jewel_neatness _neatness">FL</li>
+                        <li class="jewel_neatness">IF</li>
+                        <li class="jewel_neatness">WS1</li>
+                        <li class="jewel_neatness">WS2</li>
+                        <li class="jewel_neatness">VS1</li>
+                        <li class="jewel_neatness">VS2</li>
+                        <li class="jewel_neatness">SI1</li>
+                        <li class="jewel_neatness">SI2</li>
+                        <li class="jewel_neatness">I1</li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">证书</div>
+                    <ul class="shapes">
+                        <li class="jewel_certificate _certificate">GIA</li>
+                        <li class="jewel_certificate">HRD</li>
+                        <li class="jewel_certificate">IGI</li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="top_ul_right">
+                <li class="ul_li">
+                    <div class="name">价格</div>
+                    <div class="weight border"><input type="text" placeholder="100"></div>
+                    <div class="weight">——</div>
+                    <div class="weight redact">
+                        <input class="_price" type="text" placeholder="8999">
+                        <div class="_addSubtract">
+                            <div><img class="_plus" src="./images/up1.png" alt=""></div>
+                            <div><img class="_minus" src="./images/down1.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="weight">€</div>
+                    <div class="weight renovation">
+                        <input type="checkbox"> 价格含税
+                        <input type="checkbox"> 刷新
+                    </div>
+                </li>
+                <li class="ul_li">
+                    <div class="name">切工</div>
+                    <ul class="shapes">
+                        <li class="jewel_CUT _CUT">EX</li>
+                        <li class="jewel_CUT">VG</li>
+                        <li class="jewel_CUT">G</li>
+                        <li class="jewel_CUT">F</li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">抛光</div>
+                    <ul class="shapes">
+                        <li class="jewel_polishing _polishing">EX</li>
+                        <li class="jewel_polishing">VG</li>
+                        <li class="jewel_polishing">G</li>
+                        <li class="jewel_polishing">F</li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">对称</div>
+                    <ul class="shapes">
+                        <li class="jewel_symmetry _symmetry">EX</li>
+                        <li class="jewel_symmetry">VG</li>
+                        <li class="jewel_symmetry">G</li>
+                        <li class="jewel_symmetry">F</li>
+                    </ul>
+                </li>
+                <li class="ul_li">
+                    <div class="name">荧光</div>
+                    <ul class="shapes">
+                        <li class="jewel_flsorescence _flsorescence">无</li>
+                        <li class="jewel_flsorescence">弱</li>
+                        <li class="jewel_flsorescence">中</li>
+                        <li class="jewel_flsorescence">强</li>
+                        <li class="jewel_flsorescence">极强</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <ul class="boundary_ul">
+            <li class="boundary_li"></li>
+            <li class="jewel_sort">钻石排序</li>
+            <li class="boundary_li"></li>
+        </ul>
+        <div class="main_ul">
+                <table class="main_divLeft" border="1">
+                    <tr class="main_tr">
+                        <td class="karat checked">钻重 <span lifter class="iconfont">&#xe602;</span></td>
+                        <td class="price">价格 <span lifter class="iconfont">&#xe602;</span></td>
+                        <td class="color">颜色 <span lifter class="iconfont">&#xe602;</span></td>
+                        <td class="Clonerity">净度 <span lifter class="iconfont">&#xe602;</span></td>
+                    </tr>
+                </table>
+                <table class="main_divRight">
+                    <tr class="main_tr">
+                        <td><input type="checkbox">IGI证书</td>
+                        <td><input type="checkbox">HRD证书</td>
+                        <td><input type="checkbox">GIA证书</td>
+                    </tr>
+                </table>
+        </div>
+        <ul class="panel_group">
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元
+                            ，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元
+                            (<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元
+                            ，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元
+                            (<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元
+                            ，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元
+                            (<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="panel_heading">
+                <ul class="panel_title">
+                    <li class="iconImg"><img src="./images/jewel1.png" alt="钻石图标"></li>
+                    <li class="title_div">5.01</li>
+                    <li class="title_div">颜色|</li>
+                    <li class="title_div">净度VS2</li>
+                    <li class="title_div">证书IGI</li>
+                    <li class="title_div">切工VG</li>
+                    <li class="title_div">抛光EX</li>
+                    <li class="symmetry">对称EX</li>
+                    <li class="lookCost">未查看价格</li>
+                    <li class="contrast"><input type="checkbox">对比</li>
+                    <li class="details_exothecium">
+                        <div class="details">详情</div>
+                    </li>
+                </ul>
+                <ul class="panel_body">
+                    <li class="Show_hidden goodsImg">
+                        <img src="./images/goodsImg.png" alt="产品图片">
+                    </li>
+                    <li class="Show_hidden intro">
+                        <p>荧光强度：<span>NON</span></p>
+                        <p>所在地：<span>安特卫普</span></p>
+                        <p>证书编号：<span>224631869</span></p>
+                        <button class="View_certificate">查看证书</button>
+                    </li>
+                    <li class="Show_hidden explain">
+                        <p>钻石ID：ID-ff584B</p>
+                        <p>价格(不含税)：<span>6407.77</span>欧元(<span>6600</span>美元，<span>46200</span>人民币)</p>
+                        <p>您的会员价(不含税)：<span>6279.61</span>欧元(<span>6469</span>美元，<span>45276</span>人民币)</p>
+                        <div class="collect_reserve">
+                            <button class="collect">收藏</button>
+                            <button class="reserve">预定/预约看钻</button>
+                        </div>
+                    </li>
+                    <li class="Show_hidden pack_up">
+                        <div class="hidden_information">收起</div>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <!-- paging -->
+    <div class="paging">
+        <nav aria-label="Page navigation">
+            <ul class="pagination">
+                <li>
+                    <a href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">...</a></li>
+                <li><a href="#">25</a></li>
+                <li>
+                    <a href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div ng-include="'./shared/returnTop.html'"></div>
+    <!--footer-->
+    <div ng-include="'./shared/footer.html'"></div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./bootstrap/js/jquery-1.11.3.js" type="text/javascript"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="./bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./js/angular.js" type="text/javascript"></script>
+<script src="./js/shared.js" type="text/javascript"></script>
+<script type="text/javascript">
+    //切换升降排序样式
+    function elevator(object) {
+        $(object).click(function () {
+            if ($(object + ">span").attr("lifter") == "") {
+                $(object + ">span").html("&#xe653;").removeAttr("lifter");
+            } else {
+                $(object + ">span").html("&#xe602;").attr("lifter" , "");
+            }
+        })
+    }
+    //invoking function
+    elevator(".karat");//钻重
+    elevator(".price");//价格
+    elevator(".color");//颜色
+    elevator(".Clonerity");//净度
+
+    //选择
+    $(document).ready(function(){
+        //形状
+        $(".shapes>.shape").click(function(){
+            $(".shapes>.shape").eq($(this).index()).addClass("_click").siblings().removeClass('_click');
+        });
+        //颜色
+        $(".shapes>.jewel_color").click(function(){
+            $(".shapes>.jewel_color").eq($(this).index()).addClass("_clickColor").siblings().removeClass('_clickColor');
+        });
+        //净度
+        $(".shapes>.jewel_neatness").click(function(){
+            $(".shapes>.jewel_neatness").eq($(this).index()).addClass("_neatness").siblings().removeClass('_neatness');
+        });
+        //证书
+        $(".shapes>.jewel_certificate").click(function(){
+            $(".shapes>.jewel_certificate").eq($(this).index()).addClass("_certificate").siblings().removeClass('_certificate');
+        });
+        //切工
+        $(".shapes>.jewel_CUT").click(function(){
+            $(".shapes>.jewel_CUT").eq($(this).index()).addClass("_CUT").siblings().removeClass('_CUT');
+        });
+        //抛光
+        $(".shapes>.jewel_polishing").click(function(){
+            $(".shapes>.jewel_polishing").eq($(this).index()).addClass("_polishing").siblings().removeClass('_polishing');
+        });
+        //对称
+        $(".shapes>.jewel_symmetry").click(function(){
+            $(".shapes>.jewel_symmetry").eq($(this).index()).addClass("_symmetry").siblings().removeClass('_symmetry');
+        });
+        //荧光
+        $(".shapes>.jewel_flsorescence").click(function(){
+            $(".shapes>.jewel_flsorescence").eq($(this).index()).addClass("_flsorescence").siblings().removeClass('_flsorescence');
+        });
+        //重量加减
+        //加
+        $("._plus").click(function(){
+            var input = $(this).parent().parent().parent().find("._weight");
+            input.val(Number(input.val())+1);
+        });
+        //减
+        $("._minus").click(function(){
+            var input = $(this).parent().parent().parent().find("._weight");
+            var num = Number(input.val())-1;
+            input.val(num<=0?1:num);
+        });
+
+        //价格加减
+        //加
+        $("._plus").click(function(){
+            var input = $(this).parent().parent().parent().find("._price");
+            input.val(Number(input.val())+1);
+        });
+        //减
+        $("._minus").click(function(){
+            var input = $(this).parent().parent().parent().find("._price");
+            var num = Number(input.val())-1;
+            input.val(num<=0?1:num);
+        });
+
+        //隐藏与显示
+        $(".details").click(function () {
+            var speed = 500;
+            $(this).parent().parent().parent().find(".panel_body").animate({height:"100%"},speed);
+            $(this).parent().parent().parent().find(".panel_body").css("padding","1% 0");
+            $(this).parent().parent().parent().siblings().find(".panel_body").css("height","0");
+            $(this).parent().parent().parent().siblings().find(".panel_body").css("padding","0");
+            $(this).parent().parent().parent().siblings().find(".details").show();
+            $(this).parent().parent().parent().siblings().find(".panel_title").css("padding","0");
+            $(this).parent().parent().css("padding","1% 0");
+            $(this).hide();
+        });
+        $(".hidden_information").click(function () {
+            var speed = 300;
+            $(this).parent().parent().animate({height:"0px"},speed);
+            $(this).parent().parent().css("padding","0");
+            $(this).parent().parent().parent().find(".panel_title").css("padding","0");
+            $(".details").show();
+        });
+        //提示登录
+        $(".collect,.reserve").click(function () {
+            alert("请先登录/注册");
+        })
+    });
+
+
+
+</script>
+
+</body>
+</html>

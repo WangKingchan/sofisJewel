@@ -1,0 +1,87 @@
+/* connectUs Content main */
+.connectUs_main{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+.boundary_ul{
+    width: 100%;
+    height: auto;
+    margin: 5% 0;
+    overflow: hidden;
+    /*clear: both;*/
+}
+.boundary_li{
+    width: 35%;
+    height: 25px;
+    float: left;
+    border-bottom: 1px solid #84d8d1;
+}
+.jewel_sort{
+    width: 30%;
+    height: 50px;
+    float: left;
+    border: 1px solid #84d8d1;
+    border-radius: 25px;
+    text-align: center;
+}
+.jewel_sort>h3{
+    margin: 0;!important;
+    line-height: 50px;
+    color: #333;
+}
+.connectUs_content{
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+    margin: 5% auto;
+    min-width: 900px;
+}
+._content_left{
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    float: left;
+    padding: 0 3%;
+}
+.warmPrompt{
+    margin-top: 12%;
+}
+.warmPrompt>p,.warmPrompt>b{
+    line-height: 150%;
+    font-style: italic;
+}
+._content_right{
+    width: 50%;
+    min-width: 400px;
+    height: auto;
+    float: left;
+    padding: 0 3%;
+}
+p{
+    text-align: justify;
+    line-height: 250%;
+}
+.QR_code{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 15%;
+}
+.QR_codeImg{
+    width: 25%;
+    float: left;
+}
+.QR_code>div{
+    width: 75%;
+    float: left;
+    padding-left: 2%;
+}
+.prompt>span{
+    font-style: italic;
+}
+._phoneNum{
+    font-style: oblique;
+    text-decoration: underline;
+    color: blue;
+}

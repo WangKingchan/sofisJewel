@@ -1,0 +1,97 @@
+.personalTailorBudget_main{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.personalTailorBudget_content{
+    width: 80%;
+    height: auto;
+    margin: 2% auto;
+}
+.personalTailor_title{
+    font-size: 3vmin;
+    text-align: center;
+    line-height: 300%;
+}
+.personalTailor_procedure{
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+}
+._step{
+    width: 17%;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 18px;
+    color: #333;
+}
+.selectJewel{
+    border: 1px solid #84d8d1;
+    color: #84d8d1;
+}
+.arrows_right{
+    width: 3.75%;
+    height: 36px;
+    float: left;
+    left: 36px;
+    text-align: center;
+}
+.arrows_right>img{
+    margin: 13.5px auto;
+}
+.fillout_present{
+    width: 80%;
+    height: auto;
+    margin: 3% auto;
+}
+.first_step{
+    width: 100%;
+    height: auto;
+    line-height: 500%;
+    background: #84d8d1;
+    text-align: center;
+}
+.types{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #bbeeea;
+    padding: 2%;
+}
+._type{
+    width: 23.5%;
+    height: auto;
+    float: left;
+    background: #fff;
+    text-align: center;
+    padding-bottom: 2%;
+}
+._type>img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+.latter{
+    margin-left: 2%;
+}
+._type>p{
+    margin: 3% auto;
+}
+._type>button{
+    width: 50%;
+    height: 32px;
+    line-height: 32px;
+    border: 0;
+    border: none;
+    background: #000;
+    color: #fff;
+    outline: none;
+    border-radius: 16px;
+    margin: 5% auto;
+}

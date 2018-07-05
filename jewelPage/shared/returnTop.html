@@ -1,0 +1,21 @@
+<ul class="returnTop">
+    <li class="consultation">
+        <img src="./images/advisory.png" alt="在线咨询"><br>
+        <small>在线咨询</small>
+    </li>
+    <li class="appointment">
+        <img src="./images/appointment.png" alt="在线预约"><br>
+        <small>在线预约</small>
+    </li>
+    <li class="return_top">
+        <span class="iconfont">&#xe653;</span>
+    </li>
+</ul>
+<script type="text/javascript">
+    //返回顶部
+    $(".return_top").click(function(){
+        var speed = 300;//速度
+        $("body,html").animate({scrollTop:"0px"},speed);//animate（）兼容谷歌/火狐的写法：$('body,html')。
+        return false;
+    });
+</script>
