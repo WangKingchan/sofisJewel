@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.content,.messageBox{
+    text-align: center;
+    width: 586px;
+    border: 3px solid green;
+    background-color: #999;
+    margin: 16px auto;
+    vertical-align: middle;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.displayer{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 548px;
+    height: 100px;
+    border: 1px solid green;
+    background-color: lightgrey;
+    border-radius: 15px;
+    font: normal 500 48px/100px "Microsoft YaHei";
+    box-sizing: border-box;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+    white-space: nowrap;/*强制不换行*/
+    /*width: 12em;!*不允许出现半汉字截断*!*/
+}
+hr{margin: 20px auto;}
+.displayer:hover{
+    background-color: #7D9029;
+    color: white;
+    cursor: text;
+
+}
+.keys{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 552px;
+    margin: auto;
+}
+.key{
+    display: inline-block;
+    border: 1px solid green;
+    border-radius: 10px;
+    text-align: center;
+    width: 136px;
+    margin: 1px;
+    box-sizing: border-box;
+}
+.btn{
+    margin: auto;
+    background-color: #666;
+    font: 500 48px/128px "Microsoft YaHei";
+    border-radius: 10px;
+    width: 134px;
+    outline: none;
+    color: black;
+}
+.btn:hover{
+    background-color: #7D9029;
+    color: white;
+    cursor: pointer;
+}
+.message{
+    text-align: justify;
+    font: normal 500 16px/20px "Microsoft YaHei";
+}
